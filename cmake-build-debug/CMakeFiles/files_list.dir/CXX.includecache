@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mariemloukil/Documents/graph_project/Graph.h
+iostream
+-
+vector
+-
+chrono
+-
+unordered_map
+-
+
+/Users/mariemloukil/Documents/graph_project/main.cpp
+iostream
+-
+Graph.h
+/Users/mariemloukil/Documents/graph_project/Graph.h
+
