@@ -15,7 +15,7 @@ public:
     Graphs(int V);  // Constructor
     void addEdge(int v, int w); // function to add an edge to graph
     bool isReachable(int s, int d);
-    int verticePopularity();
+    void verticePopularity();
 };
 
 

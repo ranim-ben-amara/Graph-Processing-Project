@@ -63,27 +63,42 @@ bool Graphs::isReachable(int s, int d)
     return false;
 }
 
-int Graphs::verticePopularity() {
+void Graphs::verticePopularity() {
     list<int>::iterator i;
-    int k[V];
-    int f;
-    int vertices[V];
-    int highest =0;
-    for(int j =0;j<V;j++) {
-        k[j]=0;
-        vertices[j]=j;
+    int vertices[2][V];
+    int rank[3];
+    int hole;
+    for (int j = 0; j < V; j++) {
+        vertices[0][j] = 0;
+        vertices[1][j] = j;
         for (i = adj[j].begin(); i != adj[j].end(); i++) {
-            k[j]++;
+            vertices[0][j]++;
         }
     }
-    for(int u =0;u<V;u++){
-        if(k[u]>highest) {
-            highest = k[u];
-            f = vertices[u];
+    for(int i=1001;i<1004;i++){
+            for(int j = 1001;j<1003;j++){
+                if(vertices[0][j]>vertices[0][j+1]){
+                    hole=vertices[0][j+1];
+                    vertices[0][j+1]=vertices[0][j];
+                    vertices[0][j]=hole;
+
+                    hole=vertices[1][j+1];
+                    vertices[1][j+1]=vertices[1][j];
+                    vertices[1][j]=hole;
+                }
+            }
         }
 
+    for(int e =0;e<3;e++){
+        rank[e]=vertices[1][e+1001];
     }
 
-    return f;
+    for(int e =0;e<3;e++){
+        cout<<rank[e]<<endl;
+    }
+
+
+
+
+
 }
-

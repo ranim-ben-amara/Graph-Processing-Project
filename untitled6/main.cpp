@@ -65,11 +65,7 @@ int main () {
         b = stoi(i[1]);
         g.addEdge(a,b);
     }
-    int highest = g.verticePopularity();
-    for(auto & hobbie : hobbies){
-        if(highest == stoi(hobbie[0]))
-            cout<<hobbie[1]<<endl;
-    }
+    g.verticePopularity();
 
     string choice;
     cout<<"what is your hobby ?"<<endl;
