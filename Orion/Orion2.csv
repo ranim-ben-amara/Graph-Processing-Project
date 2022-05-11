@@ -1,0 +1,20 @@
+id;fname;lname;sex;attracted_by;sport;music;art;
+1;John;Doe;Male;H;Tennis;Piano;Painting;
+2;Jack;McGinnis;Female;H;Basketball;Singing;None;
+3;John;McGinnis;Male;G;Ping pong;Piano;None;
+4;Stephen;Repici;Male;H;Tennis;Guitar;Pottery;
+5;Steve;Tyler;Female;G;Ping pong;Piano;Drawing;
+6;Joan ;Katutchi;Male;H;Tennis;Guitar;Painting;
+7;Mourad;Cherif;Male;G;Basketball;Piano;Painting;
+8;Sahar;Bahloul;Female;H;Tennis;Guitar;Drawing;
+9;Marwan;Katakuri;Male;H;Ping pong;Singing;Painting;
+10;Hedi;Jordan;Male;G;Ping pong;Singing;Pottery;
+11;Aziz;Jackson;Male;H;Basketball;Singing;Pottery;
+12;Youssef;Watson;Male;H;Tennis;Guitar;Painting;
+13;Mehdi;Bricks;Male;H;Basketball;Piano;Drawing;
+14;Slim;Haj Romdhane;Male;H;Tennis;Guitar;Drawing;
+15;Elisabeth;Ben Mahmoud;Female;G;Ping pong;Singing;Pottery;
+16;Eva;Bouzgarou;Female;G;Ping pong;Piano;Painting;
+17;Ella;Ennaifer;Female;H;Ping pong;Piano;Painting;
+18;Bella;Berrachid;Female;G;Basketball;Piano;Pottery;
+19;Katherine;Gharbi;Female;H;Tennis;Guitar;Drawing

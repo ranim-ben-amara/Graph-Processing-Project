@@ -1,0 +1,7 @@
+id;fname;lname;sex;attracted_by;sport;music;art;
+1;John;Doe;Male;H;Tennis;Piano;Painting;
+2;Jack;McGinnis;Female;H;Basketball;Singing;Drawing;
+3;John;McGinnis;Male;G;Ping pong;Piano;Pottery;
+4;Stephen;Repici;Male;H;Tennis;Guitar;None;
+5;Steve;Tyler;Female;G;Ping pong;Singing;Drawing;
+6;Joan ;Tyler;Male;H;Basketball;Guitar;Painting

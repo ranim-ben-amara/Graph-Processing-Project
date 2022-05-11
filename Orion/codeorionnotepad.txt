@@ -1,0 +1,136 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
+#include <vector>
+#include "Graph.h"
+#include "Graph.cpp"
+
+
+using namespace std;
+
+
+
+int main () {
+
+    ifstream myFile;
+    myFile.open("C:\\Users\\Slim Romdane\\CLionProjects\\Orion\\Orion1.csv");
+    Graph tennis, basket, pingpong, piano, singing, guitar, painting, pottery, drawing;
+
+    //string First_name, Last_name, Adresses, Town, City,Postal_code, Sex,Attracted_by,Sport,Music,Art;
+
+    if(myFile.fail()){
+        cerr << "Error Opening File" << endl;
+        exit(1);
+    }
+
+    while (myFile.good()) {
+        int x = 8;
+        int y = 8;
+        std::string table[x][y];
+        for (int i = 0; i < x; i++){
+            for (int j = 0; j < y ; j++) {
+                table[i][j] = ' ';
+            }
+        }
+        for (int i = 0; i < x; i++){
+            for (int j = 0; j < y ; j++) {
+                getline(myFile,table[i][j],';' );
+            }
+        }
+
+        for (int i = 0; i < x; i++){
+            for (int j = 0; j < y; j++) {
+                cout << table[i][j] << ' ';
+            }
+
+
+        }
+        cout << endl;
+        for (int i = 1; i < x; i++) {
+            for (int j = i + 1; j < y; j++) {
+
+                if (table[i][5].compare(string("Tennis")) == 0){
+                    if(table[j][5].compare(string("Tennis")) == 0) {
+                        tennis.add_edge_unweighted(i, j);
+
+                    }
+                }
+                if (table[i][5].compare(string("Basketball")) == 0){
+                    if(table[j][5].compare(string("Basketball")) == 0) {
+                        basket.add_edge_unweighted(i, j);
+
+                    }
+                }
+                if (table[i][5].compare(string("Ping pong")) == 0){
+                    if(table[j][5].compare(string("Ping pong")) == 0) {
+                        pingpong.add_edge_unweighted(i, j);
+
+                    }
+                }
+                if (table[i][6].compare(string("Piano")) == 0){
+                    if(table[j][6].compare(string("Piano")) == 0) {
+                        piano.add_edge_unweighted(i, j);
+
+                    }
+                }
+                if (table[i][6].compare(string("Singing")) == 0){
+                    if(table[j][6].compare(string("Singing")) == 0) {
+                        singing.add_edge_unweighted(i, j);
+
+                    }
+                }
+                if (table[i][6].compare(string("Guitar")) == 0){
+                    if(table[j][6].compare(string("Guitar")) == 0) {
+                        guitar.add_edge_unweighted(i, j);
+
+                    }
+                }
+                if (table[i][7].compare(string("Painting")) == 0){
+                    if(table[j][7].compare(string("Painting")) == 0) {
+                        painting.add_edge_unweighted(i, j);
+
+                    }
+                }
+                if (table[i][7].compare(string("Pottery")) == 0){
+                    if(table[j][7].compare(string("Pottery")) == 0) {
+                        pottery.add_edge_unweighted(i, j);
+
+                    }
+                }
+
+                if (table[i][7].compare(string("Drawing")) == 0){
+                    if(table[j][7].compare(string("Drawing")) == 0) {
+                        drawing.add_edge_unweighted(i, j);
+
+                    }
+                }
+
+            }
+        }
+        cout << "You can play Tennis with ID" << endl;
+        tennis.print_graph();
+        cout << "You can play Basketball with ID" << endl;
+        basket.print_graph();
+        cout << "You can play Ping pong with ID" << endl;
+        pingpong.print_graph();
+        cout << "You can play Piano with ID" << endl;
+        piano.print_graph();
+        cout << "You can sing with ID" << endl;
+        singing.print_graph();
+        cout << "You can play Guitar with ID" << endl;
+        guitar.print_graph();
+        cout << "You can paint with ID" << endl;
+        painting.print_graph();
+        cout << "You can do pottery with ID" << endl;
+        pottery.print_graph();
+        cout << "You can draw with ID" << endl;
+        drawing.print_graph();
+
+        myFile.close();
+    }
+
+}
+
+
+
