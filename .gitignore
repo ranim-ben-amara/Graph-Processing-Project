@@ -1,0 +1,61 @@
+# Build directories
+build/
+cmake-build-debug/
+cmake-build-release/
+
+# Compiled output
+*.o
+*.a
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+*.user
+*.cbp
+
+# Build output
+/files_list
+/files_list.exe
+
+# Test and performance output
+creation_memory_cpp.txt
+creation_time_cpp.txt
+creation_time_sequential.txt
+*.stackdump
+
+# Ninja build system
+.ninja_deps
+.ninja_log
+build.ninja
+rules.ninja
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Compilation database
+compile_commands.json
+
+# Testing directories
+Testing/
