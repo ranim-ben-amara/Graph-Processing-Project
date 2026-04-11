@@ -17,8 +17,7 @@ int main(int argc, char *argv[]) {
 
 
     // Specify the name of the file containing the graph and its path below
-    string file_name= "C://spring/project/groupe-2-main/bn-65-1K.txt";
-//testt
+    string file_name = "bn-65-1K.txt";
     //Initializing an empty graph
     Graph graph;
 
